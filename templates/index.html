@@ -30,7 +30,7 @@
       <!-- Main Input For Receiving Query to our ML -->
       <form action="/predict" method="post">
         <label for="age" class="form__input">Age</label>
-        <input type="number" id="age" name="age" min=0 max=100 value=0 />
+        <input type="number" id="age" name="age" />
         <br />
         <label for="sex" class="form__input">Gender</label>
         <select id="sex" name="sex">
@@ -60,7 +60,7 @@
         <br />
         <label for="relationship_label" class="form__input">Relationship</label>
         <select id="relationship_label" name="relationship_label">
-           <option value="0">Husband</option>
+          <option value="0">Husband</option>
           <option value="1">Not-in-family</option>
           <option value="2">Other-relative</option>
           <option value="3">Own-child</option>
@@ -68,8 +68,10 @@
           <option value="5">Wife</option>
         </select>
         <br />
-        <label for="functional_weight" class="form__input">Functional weight</label>
-        <input type="number" id="functional_weight" name="functional_weight"  min=0 max=1500000 step=1000 value=0 />
+        <label for="functional_weight" class="form__input"
+          >Functional weight</label
+        >
+        <input type="number" id="functional_weight" name="functional_weight" />
         <br />
         <label for="education" class="form__input">Education</label>
         <select id="education" name="education">
@@ -124,13 +126,13 @@
         </select>
         <br />
         <label for="capital_gain" class="form__input">Capital Gain </label>
-        <input type="number" id="capital_gain" name="capital_gain"  min=0 max=10000 step=100 value=0 />[0-99999]
+        <input type="number" id="capital_gain" name="capital_gain" />[0-99999]
         <br />
         <label for="capital_loss" class="form__input">Capital Loss </label>
-        <input type="number" id="capital_loss" name="capital_loss"  min=0 max=4500 step=100 value=0 />[0-4356]
+        <input type="number" id="capital_loss" name="capital_loss" />[0-4356]
         <br />
         <label for="hours_per_week" class="form__input">Hours per Week </label>
-        <input type="number" id="hours_per_week" name="hours_per_week"   min=0 max=99 value=40 />[1-99]
+        <input type="number" id="hours_per_week" name="hours_per_week" />[1-99]
         <br />
         <label for="native_country" class="form__input">Native Country</label>
         <select id="native_country" name="native_country">
